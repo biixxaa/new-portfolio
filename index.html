@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezawit Gashaw | Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Bezawit Gashaw, a passionate 4th-year Software Engineering student at Injibara University. Skilled in C++, Java, React, Node.js, JavaScript, and PHP.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Custom JS -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Bezawit<span class="logo-accent">.G /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Switch -->
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Hamburger Toggle -->
+                <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-gradient"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Available for Projects & Internships
+                    </div>
+                    <h1 class="hero-title">
+                        Building the Future with <span class="highlight-gradient">Elegant Code</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hello! I am <strong>Bezawit Gashaw</strong>, a 4th-year Software Engineering student at <strong>Injibara University</strong>. I engineer clean, efficient, and robust applications using programming languages like C++ and Java, and modern web frameworks like React, Node.js, and PHP.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                            Explore Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                            Let's Connect
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">4th</span>
+                            <span class="stat-label">Year Student</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">9+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">12+</span>
+                            <span class="stat-label">Course Projects</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <img src="assets/avatar.png" alt="Bezawit Gashaw Developer Illustration" class="avatar-img" id="hero-avatar">
+                        <div class="visual-badge code-badge">
+                            <i class="fa-solid fa-code text-violet"></i>
+                            <span>C++ & Java</span>
+                        </div>
+                        <div class="visual-badge react-badge">
+                            <i class="fa-brands fa-react text-blue"></i>
+                            <span>React & Node</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">My academic roots and technical drive</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card glass">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education & Injibara University</h3>
+                        <p>
+                            Currently completing my final year in <strong>Software Engineering</strong> at <strong>Injibara University</strong>, situated in the beautiful green highlands of Injibara, Ethiopia. My academic journey has grounded me in computer systems, mathematics, database design, and software lifecycle methods.
+                        </p>
+                        <p>
+                            Being a software engineer means solving real-world challenges. I leverage my theoretical knowledge to create useful applications, exploring everything from low-level systems logic in C++ to interactive experiences in React.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Technical Philosophy</h3>
+                        <p>
+                            I believe in writing clean, well-documented, and performant code. I enjoy building things from the ground up, whether that means implementing OOP design patterns in Java or styling smooth transitions using custom CSS.
+                        </p>
+                        <ul class="philosophy-list">
+                            <li><i class="fa-solid fa-circle-check text-emerald"></i> Modular & Clean Architecture</li>
+                            <li><i class="fa-solid fa-circle-check text-emerald"></i> Cross-Platform Optimization</li>
+                            <li><i class="fa-solid fa-circle-check text-emerald"></i> Lifelong Learning & Adaptation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Toolbox</h2>
+                    <p class="section-subtitle">Technologies I work with daily</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-terminal category-icon text-violet"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C++ / C++ Advanced (C++2)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-cpp" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java (OOP & Swing)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-java" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-js" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Web Development -->
+                    <div class="skill-category glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon text-blue"></i>
+                            <h3>Frontend Web</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React.js</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-react" style="width: 82%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-htmlcss" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Responsive Design / Vanilla CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-design" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Server Management -->
+                    <div class="skill-category glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon text-emerald"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js & Express</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-node" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PHP</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-php" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL / Databases</span>
+                                    <span>84%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-db" style="width: 84%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Timeline Section -->
+        <section id="timeline" class="timeline-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Academic Journey</h2>
+                    <p class="section-subtitle">My software engineering path at Injibara University</p>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Year 1 -->
+                    <div class="timeline-card-wrapper left">
+                        <div class="timeline-card glass">
+                            <div class="timeline-marker">1</div>
+                            <span class="timeline-year">Year 1: Foundation</span>
+                            <h4>First Steps in Engineering</h4>
+                            <p>Mastered basic logic, mathematical foundations, and got introduced to computer science. Learned the core syntax of <strong>C++</strong> and built command-line calculators and puzzle solvers.</p>
+                            <span class="timeline-tag">C++</span>
+                            <span class="timeline-tag">Math</span>
+                        </div>
+                    </div>
+
+                    <!-- Year 2 -->
+                    <div class="timeline-card-wrapper right">
+                        <div class="timeline-card glass">
+                            <div class="timeline-marker">2</div>
+                            <span class="timeline-year">Year 2: Architecture & Structures</span>
+                            <h4>Data Structures & OOP</h4>
+                            <p>Dived deep into Object-Oriented Programming (OOP) concepts. Mastered <strong>Java</strong>, learned about file structures, sorting algorithms, pointers in C++, and relational database designs.</p>
+                            <span class="timeline-tag">Java</span>
+                            <span class="timeline-tag">Data Structures</span>
+                            <span class="timeline-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Year 3 -->
+                    <div class="timeline-card-wrapper left">
+                        <div class="timeline-card glass">
+                            <div class="timeline-marker">3</div>
+                            <span class="timeline-year">Year 3: Web Systems</span>
+                            <h4>Web Engineering & Integration</h4>
+                            <p>Began building dynamic full-stack projects. Developed static and dynamic pages using <strong>HTML/CSS</strong>, interactive <strong>JavaScript</strong>, and server-side scripting with <strong>PHP</strong>. Discovered single-page applications via <strong>React</strong>.</p>
+                            <span class="timeline-tag">HTML & CSS</span>
+                            <span class="timeline-tag">PHP</span>
+                            <span class="timeline-tag">React</span>
+                        </div>
+                    </div>
+
+                    <!-- Year 4 -->
+                    <div class="timeline-card-wrapper right">
+                        <div class="timeline-card glass">
+                            <div class="timeline-marker">4</div>
+                            <span class="timeline-year">Year 4: Specialization</span>
+                            <h4>Advanced Systems & Capstone</h4>
+                            <p>Focusing on enterprise software engineering, software architecture, testing, and modern server solutions like <strong>Node.js</strong>. Implementing capstone projects with full database integrations.</p>
+                            <span class="timeline-tag">NodeJS</span>
+                            <span class="timeline-tag">Software Testing</span>
+                            <span class="timeline-tag">Capstone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-subtitle">Real-world applications and academic work</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="desktop">OOP & Systems</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-container">
+                    
+                    <!-- Project 1 (Web / PHP) -->
+                    <article class="project-card glass" data-category="web">
+                        <div class="project-visual proj-grad-1">
+                            <i class="fa-solid fa-graduation-cap card-bg-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">PHP / SQL / Web</span>
+                            <h3 class="project-title">Injibara Student Portal</h3>
+                            <p class="project-desc">A course assessment portal built for students at Injibara University. Features registration, viewing grades, and teacher notes submission.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">PHP</span>
+                                <span class="p-tag">MySQL</span>
+                                <span class="p-tag">Vanilla JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener" class="p-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="p-link demo-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 (Web / React & Node) -->
+                    <article class="project-card glass" data-category="web">
+                        <div class="project-visual proj-grad-2">
+                            <i class="fa-solid fa-book-open card-bg-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">React / Node.js</span>
+                            <h3 class="project-title">E-Learning Platform API</h3>
+                            <p class="project-desc">A backend-oriented system with a clean React interface. Provides robust REST endpoints for class creation, student enrollment, and assignment tracking.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">React</span>
+                                <span class="p-tag">Express</span>
+                                <span class="p-tag">NodeJS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener" class="p-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="p-link demo-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 (Desktop / Java) -->
+                    <article class="project-card glass" data-category="desktop">
+                        <div class="project-visual proj-grad-3">
+                            <i class="fa-solid fa-hospital card-bg-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">Java / OOP</span>
+                            <h3 class="project-title">Medical Inventory Manager</h3>
+                            <p class="project-desc">A desktop application using Java Swing. Implements full CRUD operations, inventory search filters, and automatic low-stock notifications.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">Java</span>
+                                <span class="p-tag">Swing GUI</span>
+                                <span class="p-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener" class="p-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="p-link demo-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 (Web / React) -->
+                    <article class="project-card glass" data-category="web">
+                        <div class="project-visual proj-grad-4">
+                            <i class="fa-solid fa-wheat-awn card-bg-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">React / CSS Grid</span>
+                            <h3 class="project-title">Smart Agriculture IoT Panel</h3>
+                            <p class="project-desc">A frontend dashboard demonstrating mock telemetry from soil sensors in the Awi Zone. Visualizes temperature, humidity, and crops viability index.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">React</span>
+                                <span class="p-tag">Chart.js</span>
+                                <span class="p-tag">CSS Variables</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener" class="p-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="p-link demo-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 (Desktop / C++) -->
+                    <article class="project-card glass" data-category="desktop">
+                        <div class="project-visual proj-grad-5">
+                            <i class="fa-solid fa-diagram-project card-bg-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-cat">C++ / Algorithms</span>
+                            <h3 class="project-title">Pathfinding Algorithm Visualizer</h3>
+                            <p class="project-desc">Built in C++ to demonstrate graph traversal algorithms (BFS, DFS, Dijkstra). Visualizes calculations step-by-step in terminal and exportable grids.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">C++</span>
+                                <span class="p-tag">C++2</span>
+                                <span class="p-tag">Algorithms</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener" class="p-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="p-link demo-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss opportunities, projects, or say hello!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info glass">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out via any of these channels. I'm active and open to discussing developer roles or university collaborations.</p>
+                        
+                        <ul class="contact-details">
+                            <li>
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="c-text">
+                                    <span class="c-label">Email Me</span>
+                                    <a href="mailto:bezawit.gashaw@injibara.edu.et" class="c-val">bezawit.gashaw@example.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="c-text">
+                                    <span class="c-label">Location</span>
+                                    <span class="c-val">Injibara, Awi Zone, Ethiopia</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-icon"><i class="fa-solid fa-school"></i></div>
+                                <div class="c-text">
+                                    <span class="c-label">Institution</span>
+                                    <a href="http://www.injibara.edu.et" target="_blank" rel="noopener" class="c-val">Injibara University</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Profile" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://t.me" target="_blank" rel="noopener" aria-label="Telegram" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" required placeholder="Bezawit Gashaw" autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" required placeholder="name@example.com" autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Project Opportunity">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" required placeholder="Hi Bezawit, let's collaborate on..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-contact">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader hidden"><i class="fa-solid fa-spinner fa-spin"></i></span>
+                            </button>
+                        </form>
+                        <div class="form-success-message hidden" id="form-success">
+                            <i class="fa-regular fa-circle-check success-icon"></i>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been sent successfully. I will get back to you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Bezawit Gashaw. Handcrafted using modern vanilla technologies.</p>
+            </div>
+            <div class="footer-right">
+                <!-- Secret Admin Portal Link -->
+                <button class="admin-portal-link" id="admin-portal-trigger" aria-label="Admin Dashboard Access">
+                    <i class="fa-solid fa-lock"></i> Dev Portal
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Panel Glass Modal (Hidden by default) -->
+    <div class="modal-overlay hidden" id="admin-modal">
+        <div class="admin-modal-card glass">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-terminal text-violet"></i> Client-Side Admin Inbox</h3>
+                <button class="close-modal-btn" id="close-admin-modal" aria-label="Close Admin Modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-intro-text">
+                    This dashboard retrieves and displays messages stored locally in your browser's <code>localStorage</code>. It showcases dynamic client-side state handling.
+                </p>
+                <div class="admin-stats">
+                    <div class="admin-stat-card">
+                        <span class="stat-count-num" id="total-msgs-count">0</span>
+                        <span>Total Messages</span>
+                    </div>
+                </div>
+                <div class="inbox-container">
+                    <div class="inbox-empty" id="inbox-empty-view">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <p>No messages received yet. Submit the contact form to see messages here!</p>
+                    </div>
+                    <div class="inbox-list hidden" id="inbox-list-view">
+                        <!-- Dynamically filled by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="clear-all-messages">Clear All Messages</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
